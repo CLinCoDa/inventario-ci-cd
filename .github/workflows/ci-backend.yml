@@ -1,13 +1,14 @@
 name: CI Backend
+
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
-  jobs:
-    test-backend:
-      runs-on: ubuntu-latest
+jobs:
+  test-backend:
+    runs-on: ubuntu-latest
 
     steps:
       - name: Descargar código del repositorio
